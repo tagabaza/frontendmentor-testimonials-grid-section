@@ -1,0 +1,97 @@
+// Primary Colours
+$violet: hsl(263, 55%, 52%);
+$greyBlue: hsl(217, 19%, 35%);
+$blackBlue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+// Neutral Colours
+$lightGrey: hsl(0, 0%, 81%);
+$lightGreyishBlue: hsl(210, 46%, 95%);
+
+//Font
+$fontStyle: "Barlow Semi Condensed", sans-serif;
+
+//Mixins
+@mixin itemTheme($bckgrndColor, $fontColor) {
+  background-color: $bckgrndColor;
+  color: $fontColor;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $lightGreyishBlue;
+  //   color: $white;
+  font-family: $fontStyle;
+  font-size: 13px;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 90px 20px;
+}
+
+.item {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .title {
+    display: inline;
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 3px;
+  }
+
+  .qMarks {
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+  }
+}
+
+.profile {
+  img {
+    border-radius: 50%;
+    width: 15%;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  p {
+    opacity: 0.5;
+    font-size: 0.9rem;
+  }
+
+  padding-bottom: 20px;
+}
+
+.item-1 {
+  @include itemTheme($violet, $white);
+}
+
+.item-2 {
+  @include itemTheme($greyBlue, $white);
+}
+
+.item-3 {
+  @include itemTheme($white, $greyBlue);
+}
+
+.item-4 {
+  @include itemTheme($blackBlue, $white);
+}
+
+.item-5 {
+  @include itemTheme($white, $greyBlue);
+}

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 90px 20px;
+}
+
+.item {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.item h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.item .title {
+  display: inline;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.item .qMarks {
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+}
+
+.profile {
+  padding-bottom: 20px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 15%;
+}
+
+.profile h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile p {
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.item-1 {
+  background-color: #7541c8;
+  color: white;
+}
+
+.item-2 {
+  background-color: #48556a;
+  color: white;
+}
+
+.item-3 {
+  background-color: white;
+  color: #48556a;
+}
+
+.item-4 {
+  background-color: #19212e;
+  color: white;
+}
+
+.item-5 {
+  background-color: white;
+  color: #48556a;
+}
+/*# sourceMappingURL=styles.css.map */
